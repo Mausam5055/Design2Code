@@ -86,8 +86,8 @@ export default class Footer extends Component {
 
           {/* Bottom Section with Logo */}
           <div className="grid grid-cols-1 gap-6 items-center">
-            {/* SVG Logo - Centered */}
-            <div className="flex justify-center">
+            {/* SVG Logo - Slightly Rightwards */}
+            <div className="flex justify-center pl-4">
               <svg viewBox="0 0 600 120" className="w-full max-w-md h-auto">
                 <g filter="url(#glitch)" transform="translate(60, 0)">
                   <text x="0" y="55%" fontSize="64" textAnchor="start" fill="#ffffff">Design<tspan fill="red">2</tspan>Code</text>
