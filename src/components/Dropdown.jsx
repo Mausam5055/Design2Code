@@ -58,7 +58,7 @@ export default function Nav({ isOpen, toggleMenu }) {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="lg:hidden fixed top-0 left-0 w-full h-[100dvh] bg-white z-40 text-black text-xs flex flex-col"
+            className="lg:hidden fixed top-0 left-0 w-full h-[100dvh] bg-[#dcfebc] z-40 text-black text-xs flex flex-col"
             variants={menuVariants}
             initial="hidden"
             animate="visible"
@@ -68,12 +68,7 @@ export default function Nav({ isOpen, toggleMenu }) {
               <div className="w-full px-4">
                 <div className="w-full">
                   <div className="overflow-hidden">
-                    <motion.h2
-                      {...smallTextAnimation(1)}
-                      className="pb-2 text-gray-500 font-medium"
-                    >
-                      (Navigation)
-                    </motion.h2>
+                    
                   </div>
                   <motion.div
                     {...underlineAnimation(1.05)}
