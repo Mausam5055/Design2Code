@@ -28,6 +28,13 @@ export default class Benefit extends Component {
               <div className="w-16 h-1 bg-[#bbecff]"></div>
 
               <div className="relative bg-[#f7f3ef] w-[100%] border-black border-1 mx-auto shadow-md mb-6 px-6 md:px-26">
+                <div className="">
+                  <img
+                    className="absolute object-cover top-0 left-0 h-12 w-12 md:h-16 md:w-16 bg-[#bbecff] p-4"
+                    alt=""
+                    src="https://peekinsights.co/wp-content/uploads/2024/09/icon-magnifying-glass.svg"
+                  />
+                </div>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 mb-3">
                     <svg
