@@ -119,7 +119,7 @@ export default class Benefit extends Component {
             <div className="absolute w-[80%] h-[80%] rounded-full">
               <img
                 className="w-full h-full rounded-full object-cover"
-                src=""
+                src="demo.jpg"
                 alt="Online Design Sprint"
               />
             </div>
@@ -249,7 +249,7 @@ export default class Benefit extends Component {
             <div className="absolute w-[80%] h-[80%] rounded-full">
               <img
                 className="w-full h-full rounded-full object-cover"
-                src=""
+                src="demo2.jpg"
                 alt="Prize Structure"
               />
             </div>
