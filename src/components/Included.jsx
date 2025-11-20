@@ -108,14 +108,6 @@ export default class Included extends Component {
           <h1 className="font-serif font-light text-3xl md:text-5xl px-6 py-10 leading-tight">
             Evaluation Committee
           </h1>
-          <div className="flex justify-center my-4">
-            <CircularText 
-              text="Meet Our Expert Evaluators "
-              spinDuration={15}
-              onHover="speedUp"
-              className=""
-            />
-          </div>
           
           {/* Mobile Carousel */}
           <div className="mt-0 xl:hidden">
@@ -189,6 +181,15 @@ export default class Included extends Component {
               </div>
             </div>
           </div>
+          {/* Circular Text for Mobile at Bottom */}
+          <div className="flex justify-center mt-8 xl:hidden">
+            <CircularText 
+              text="Meet Our Expert Evaluators "
+              spinDuration={15}
+              onHover="speedUp"
+              className=""
+            />
+          </div>
           
           {/* Desktop Grid Layout */}
           <div className="mt-0 hidden xl:block">
@@ -235,6 +236,15 @@ export default class Included extends Component {
                   </div>
                 </div>
               ))}
+            </div>
+            {/* Circular Text at Bottom Right */}
+            <div className="flex justify-end mt-8">
+              <CircularText 
+                text="Meet Our Expert Evaluators "
+                spinDuration={15}
+                onHover="speedUp"
+                className=""
+              />
             </div>
           </div>
         </div>
