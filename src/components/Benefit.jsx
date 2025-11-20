@@ -19,7 +19,7 @@ export default class Benefit extends Component {
         </h1> */}
 
         {/* Prize Structure Section */}
-        <div className="bg-gray-100 w-[96%] lg:h-[100vh] border mx-auto mt-10 grid grid-cols-1 lg:grid-cols-2 shadow-sm hover:shadow-md transition-shadow">
+        <div className="bg-white w-[96%] lg:h-[100vh] border mx-auto mt-10 grid grid-cols-1 lg:grid-cols-2 shadow-sm hover:shadow-md transition-shadow">
           <div className="flex flex-col justify-center lg:order-2 px-4 sm:px-6 lg:px-8 py-10 lg:py-0">
             <div className="space-y-6">
               <h2 className="font-serif font-medium text-3xl md:text-4xl lg:text-5xl leading-tight text-gray-900">
@@ -28,7 +28,7 @@ export default class Benefit extends Component {
               <div className="w-16 h-1 bg-[#bbecff]"></div>
 
               <div className="space-y-4">
-                <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border-2 border-gray-300 shadow-sm">
+                <div className="border-2 border-black p-4 md:p-5 rounded-lg bg-white shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
                     <svg
                       className="w-8 h-8 text-gray-600"
@@ -44,7 +44,11 @@ export default class Benefit extends Component {
                   <p className="text-3xl md:text-4xl font-bold text-gray-900">
                     ₹4,000
                   </p>
-                  <p className="text-gray-700 mt-2 font-sans">Cash Gift Card</p>
+                  <div className="flex items-center bg-white rounded-2xl gap-2 w-fit px-2 my-2">
+                    <span className="text-sm md:text-lg font-mono font-light py-2">
+                      Cash Gift Card
+                    </span>
+                  </div>
                 </div>
 
                 <div className="space-y-3 font-sans text-base md:text-lg">
@@ -60,12 +64,14 @@ export default class Benefit extends Component {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">
-                        Official Offline Certificates
-                      </span>{" "}
-                      for all winning team members
-                    </p>
+                    <div className="flex items-center bg-white rounded-2xl gap-2 w-fit px-2 my-2">
+                      <p className="text-gray-700 py-2">
+                        <span className="font-semibold">
+                          Official Offline Certificates
+                        </span>{" "}
+                        for all winning team members
+                      </p>
+                    </div>
                   </div>
 
                   <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
@@ -80,12 +86,14 @@ export default class Benefit extends Component {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <p className="text-gray-700">
-                      <span className="font-semibold">
-                        Digital Participation Certificates
-                      </span>{" "}
-                      for all other participants
-                    </p>
+                    <div className="flex items-center bg-white rounded-2xl gap-2 w-fit px-2 my-2">
+                      <p className="text-gray-700 py-2">
+                        <span className="font-semibold">
+                          Digital Participation Certificates
+                        </span>{" "}
+                        for all other participants
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
