@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Nav from "./Dropdown";
 
 const Header = () => {
@@ -49,7 +50,7 @@ const Header = () => {
         }`}
       >
         <div className="w-full h-18 lg:h-20 border-b flex justify-between items-center ">
-          <a href="">
+          <Link to="/">
             <svg
               viewBox="50 -10 500 100"
               className="items-center p-4 h-20 md:h-24"
@@ -82,7 +83,7 @@ const Header = () => {
                 </text>
               </g>
             </svg>
-          </a>
+          </Link>
           <div className="flex items-center gap-8 mr-4 text-xl font-mono">
             <a
               className="hidden font-normal text-lg lg:block relative overflow-hidden group cursor-pointer"
@@ -107,18 +108,14 @@ const Header = () => {
                 Evaluation Committee
               </span>
             </a>
-            <button 
-              className="hidden py-2 px-4 rounded-lg font-normal text-lg md:block relative overflow-hidden group bg-black text-white hover:bg-white hover:text-black"
-              onClick={(e) => {
-                e.preventDefault();
-                // You can add registration logic here
-                alert('Registration functionality would go here');
-              }}
+            <Link 
+              to="/register"
+              className="hidden py-2 px-4 rounded-lg font-normal text-lg md:inline-block relative overflow-hidden group bg-black text-white hover:bg-white hover:text-black"
             >
               <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
                 Register Now!
               </span>
-            </button>
+            </Link>
             <div 
               className="h-10 w-10 cursor-pointer lg:hidden text-black lg:text-black"
               onClick={toggleMenu}

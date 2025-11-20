@@ -35,4 +35,13 @@ export default [
       ],
     },
   },
+  {
+    files: ['server.js'],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
 ]

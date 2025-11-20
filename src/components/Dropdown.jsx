@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 export default function Nav({ isOpen, toggleMenu }) {
@@ -120,16 +121,13 @@ export default function Nav({ isOpen, toggleMenu }) {
                   <div className="flex pb-2 items-center text-4xl justify-between">
                     <div className="overflow-hidden pb-1">
                       <motion.div {...bigTextAnimation(1.5)}>
-                        <div
-                          className="text-4xl text-black cursor-pointer"
-                          onClick={() => {
-                            // You can add registration logic here
-                            alert('Registration functionality would go here');
-                            toggleMenu(); // Close the menu
-                          }}
+                        <Link
+                          to="/register"
+                          className="text-4xl text-black cursor-pointer block"
+                          onClick={toggleMenu}
                         >
                           Register Now
-                        </div>
+                        </Link>
                       </motion.div>
                     </div>
                     <div className="overflow-hidden pb-1">

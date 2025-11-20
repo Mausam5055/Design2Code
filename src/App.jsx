@@ -4,14 +4,9 @@ import Lenis from 'lenis';
 import Preloader from './components/Preloader';
 
 // Import all components
-import Header from './components/Header';
-import Hero from './components/Hero';
-// import Insight from './components/Insight';
-import Benefit from './components/Benefit';
-import Footer from './components/Footer';
-import Scroller from './components/Scroller';
-import Included from './components/Included';
-import Pack from './components/Pack';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Home from './pages/Home';
+import HackathonRegister from './pages/HackathonRegister';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -72,16 +67,11 @@ function App() {
       </AnimatePresence>
       
       {!isLoading && (
-        <div>
-          <Header />
-          <Hero />
-          {/* <Insight /> */}
-          <Benefit />
-          <Scroller />
-          {/* <Included /> */}
-          <Pack />
-          <Footer />
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<HackathonRegister />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       )}
     </div>
   );

@@ -83,8 +83,6 @@ class Pack extends React.Component {
   }
 
   render() {
-    const { currentIndex } = this.state;
-    
     const committeeMembers = [
       { id: 1, name: 'Dr. T Venkateswara Rao', role: 'Faculty Co-ordinator', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376310/D56_0101_-_Copy_sbe7g9.png', linkedinUrl: 'https://www.linkedin.com/in/dr-t-venkateswara-rao/', bgColor: 'bg-white', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-1-icon.svg' },
       { id: 2, name: 'Tanishk Kapoor', role: 'President', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376310/D56_0101_-_Copy_sbe7g9.png', linkedinUrl: 'https://www.linkedin.com/in/tanishk-kapoor-64722828a/', bgColor: 'bg-[#f1ee83]', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-2-icon.svg' },

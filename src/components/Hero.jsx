@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import tick from "../assets/tick.jpg";
 
 const Hero = () => {
@@ -20,10 +21,11 @@ const Hero = () => {
             We{`'`}re hosting a 2 day&apos;s sprint to find the best front-end champs on campus. You just show up, team up, and code. This is for the coders who want to flex their CSS skills and the designers who want to see their vision built right.
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 pt-8 md:pt-0">
-            <button className="flex items-center w-[90%] h-14 ml-5 md:ml-6 mt-4 md:mt-20 rounded-xl justify-between border-2 border-black hover:bg-white hover:text-black">
-              <a className="px-4 md:text-lg capitalize" href="">
-                Submit your team!
-              </a>
+            <Link
+              to="/register"
+              className="flex items-center w-[90%] h-14 ml-5 md:ml-6 mt-4 md:mt-20 rounded-xl justify-between border-2 border-black hover:bg-white hover:text-black transition"
+            >
+              <span className="px-4 md:text-lg capitalize">Submit your team!</span>
               <div className="h-8 w-8 mr-4">
                 <svg
                   viewBox="0 0 24 24"
@@ -35,18 +37,14 @@ const Hero = () => {
                   strokeLinejoin="round"
                 >
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></g>
+                  <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                   <g id="SVGRepo_iconCarrier">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
                     <polyline points="7 7 17 7 17 17"></polyline>
                   </g>
                 </svg>
               </div>
-            </button>
+            </Link>
             <button className="flex items-center w-[90%] h-14 ml-5 md:ml-6 mt-2 md:mt-20 bg-white text-black rounded-xl justify-between border-2 border-black hover:bg-black hover:text-white">
               <a className="px-4 md:text-lg" href="">
                 Know More
