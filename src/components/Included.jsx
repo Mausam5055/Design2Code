@@ -1,4 +1,5 @@
 import { Component } from "react";
+import CircularText from "./CircularText";
 
 export default class Included extends Component {
   constructor(props) {
@@ -101,12 +102,20 @@ export default class Included extends Component {
               </svg>
             </div>
             <span className="font-sans text-sm font-light text-black uppercase">
-              Evaluaters
+              Evaluators
             </span>
           </div>
           <h1 className="font-serif font-light text-3xl md:text-5xl px-6 py-10 leading-tight">
             Evaluation Committee
           </h1>
+          <div className="flex justify-center my-4">
+            <CircularText 
+              text="Meet Our Expert Evaluators "
+              spinDuration={15}
+              onHover="speedUp"
+              className=""
+            />
+          </div>
           
           {/* Mobile Carousel */}
           <div className="mt-0 xl:hidden">

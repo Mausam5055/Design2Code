@@ -1,35 +1,30 @@
 "use client";
 
-import React, { useEffect } from 'react';
-import { motion, useAnimation, useMotionValue, MotionValue, Transition } from 'framer-motion';
+import { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { motion, useAnimation, useMotionValue } from 'framer-motion';
 
-import './circular_Text.css';
-interface CircularTextProps {
-  text: string;
-  spinDuration?: number;
-  onHover?: 'slowDown' | 'speedUp' | 'pause' | 'goBonkers';
-  className?: string;
-}
+import './CircularText.css';
 
-const getRotationTransition = (duration: number, from: number, loop: boolean = true) => ({
+const getRotationTransition = (duration, from, loop = true) => ({
   from,
   to: from + 360,
-  ease: 'linear' as const,
+  ease: 'linear',
   duration,
-  type: 'tween' as const,
+  type: 'tween',
   repeat: loop ? Infinity : 0
 });
 
-const getTransition = (duration: number, from: number) => ({
+const getTransition = (duration, from) => ({
   rotate: getRotationTransition(duration, from),
   scale: {
-    type: 'spring' as const,
+    type: 'spring',
     damping: 20,
     stiffness: 300
   }
 });
 
-const CircularText: React.FC<CircularTextProps> = ({
+const CircularText = ({
   text,
   spinDuration = 20,
   onHover = 'speedUp',
@@ -37,7 +32,7 @@ const CircularText: React.FC<CircularTextProps> = ({
 }) => {
   const letters = Array.from(text);
   const controls = useAnimation();
-  const rotation: MotionValue<number> = useMotionValue(0);
+  const rotation = useMotionValue(0);
 
   useEffect(() => {
     const start = rotation.get();
@@ -53,7 +48,7 @@ const CircularText: React.FC<CircularTextProps> = ({
 
     if (!onHover) return;
 
-    let transitionConfig: ReturnType<typeof getTransition> | Transition;
+    let transitionConfig;
     let scaleVal = 1;
 
     switch (onHover) {
@@ -65,7 +60,7 @@ const CircularText: React.FC<CircularTextProps> = ({
         break;
       case 'pause':
         transitionConfig = {
-          rotate: { type: 'spring', damping: 20, stiffness: 300 },
+          rotate: start,
           scale: { type: 'spring', damping: 20, stiffness: 300 }
         };
         break;
@@ -117,6 +112,13 @@ const CircularText: React.FC<CircularTextProps> = ({
       })}
     </motion.div>
   );
+};
+
+CircularText.propTypes = {
+  text: PropTypes.string.isRequired,
+  spinDuration: PropTypes.number,
+  onHover: PropTypes.oneOf(['slowDown', 'speedUp', 'pause', 'goBonkers']),
+  className: PropTypes.string
 };
 
 export default CircularText;
