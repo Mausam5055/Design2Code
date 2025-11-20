@@ -38,10 +38,7 @@ export default function Nav({ isOpen, toggleMenu }) {
     animate: { y: 0, transition: { delay, ease: [0.77, 0, 0.175, 1], duration: 1.5 } },
   });
 
-  const underlineAnimation = (delay) => ({
-    initial: { width: 0 },
-    animate: { width: "100%", transition: { delay, duration: 1, ease: "easeInOut" } },
-  });
+  
 
   // Function to handle smooth scrolling to sections
   const scrollToSection = (sectionId) => {
@@ -70,10 +67,7 @@ export default function Nav({ isOpen, toggleMenu }) {
                   <div className="overflow-hidden">
                     
                   </div>
-                  <motion.div
-                    {...underlineAnimation(1.05)}
-                    className="w-full bg-black h-[1px]"
-                  ></motion.div>
+                  
                 </div>
                 <div className="w-full">
                   <div className="flex pb-2 items-center text-4xl justify-between">
@@ -96,10 +90,7 @@ export default function Nav({ isOpen, toggleMenu }) {
                       </motion.div>
                     </div>
                   </div>
-                  <motion.div
-                    {...underlineAnimation(1.25)}
-                    className="w-full bg-black h-[1px]"
-                  ></motion.div>
+                  
                 </div>
                 <div className="w-full">
                   <div className="flex pb-1 items-start text-4xl justify-between">
@@ -110,7 +101,7 @@ export default function Nav({ isOpen, toggleMenu }) {
                           className="text-4xl text-black cursor-pointer leading-tight break-words"
                           onClick={() => scrollToSection('ourgoals')}
                         >
-                          Evaluation Committee
+                          Evaluators
                         </motion.div>
                       </div>
                     </div>
@@ -123,10 +114,7 @@ export default function Nav({ isOpen, toggleMenu }) {
                       </motion.div>
                     </div>
                   </div>
-                  <motion.div
-                    {...underlineAnimation(1.45)}
-                    className="w-full bg-black h-[1px]"
-                  ></motion.div>
+                  
                 </div>
                 <div className="w-full">
                   <div className="flex pb-2 items-center text-4xl justify-between">
@@ -153,10 +141,7 @@ export default function Nav({ isOpen, toggleMenu }) {
                       </motion.div>
                     </div>
                   </div>
-                  <motion.div
-                    {...underlineAnimation(1.65)}
-                    className="w-full bg-black h-[1px]"
-                  ></motion.div>
+                  
                 </div>
               </div>
             </div>
