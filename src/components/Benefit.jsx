@@ -84,7 +84,7 @@ export default class Benefit extends Component {
                         </g>
                       </svg>
                     </div>
-                    <span className="text-sm md:text-lg font-mono font-light py-2">
+                    <span className="text-sm md:text-xl font-mono font-light py-2">
                       <span className="font-semibold">
                         Official Offline Certificates
                       </span>{" "}
@@ -124,7 +124,7 @@ export default class Benefit extends Component {
                         </g>
                       </svg>
                     </div>
-                    <span className="text-sm md:text-lg font-mono font-light py-2">
+                    <span className="text-sm md:text-xl font-mono font-light py-2">
                       <span className="font-semibold">
                         Digital Participation Certificates
                       </span>{" "}
