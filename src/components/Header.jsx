@@ -76,7 +76,7 @@ const Header = () => {
                   y="55%"
                   fontSize="64"
                   textAnchor="start"
-                  fill="#000000"
+                  fill="currentColor"
                 >
                   Design<tspan fill="red">2</tspan>Code
                 </text>
@@ -130,7 +130,7 @@ const Header = () => {
               >
                 <path
                   d="M4 12H20M4 8H20M4 16H12"
-                  stroke="#000000"
+                  stroke="currentColor"
                   strokeWidth="0.696"
                   strokeLinecap="round"
                   strokeLinejoin="round"

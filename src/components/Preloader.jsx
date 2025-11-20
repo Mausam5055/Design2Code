@@ -26,7 +26,7 @@ const Preloader = ({ onFinish }) => {
 
   return (
     <motion.div
-      className="fixed h-[100dvh] w-full bg-[#eceae5] top-0 left-0 text-[#0e0e0e] z-[100] flex flex-col items-center justify-center font-[Neue]"
+      className="fixed h-[100dvh] w-full bg-white top-0 left-0 text-black z-[100] flex flex-col items-center justify-center font-[Neue]"
       initial={{ y: 0 }}
       exit={{ y: "-100%" }}
       transition={{ 
@@ -47,7 +47,7 @@ const Preloader = ({ onFinish }) => {
             initial={{ width: 0 }}
             animate={{ width: "15vh" }}
             transition={{ delay: 0.8, duration: 1.2 }}
-            className="h-[15vh] bg-[#0e0e0e]"
+            className="h-[15vh] bg-black"
           ></motion.div>
           <h1 className="text-5xl">X</h1>
         </div>
