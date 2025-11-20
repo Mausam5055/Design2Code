@@ -33,7 +33,7 @@ export default class Benefit extends Component {
           <div className="p-3 md:p-4 relative w-[90%] h-[60vh] my-auto py-10 mx-auto grid-pattern">
             <div className="absolute w-[40%] h-[80%] bottom-[10%] right-[2%] z-10 ">
               <img
-                src="https://peekinsights.co/wp-content/themes/starter/img/cro-uplift.svg"
+                src=""
                 alt=""
               />
             </div>
@@ -50,7 +50,7 @@ export default class Benefit extends Component {
                 </clipPath>
               </defs>
               <image
-                href="https://peekinsights.co/wp-content/uploads/2024/09/store-front.jpg.webp"
+                href=""
                 width="200"
                 height="200"
                 clipPath="url(#clip0_224_605)"
@@ -119,7 +119,7 @@ export default class Benefit extends Component {
             <div className="absolute w-[80%] h-[80%] rounded-full">
               <img
                 className="w-full h-full rounded-full object-cover"
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                src=""
                 alt="Online Design Sprint"
               />
             </div>
@@ -173,7 +173,7 @@ export default class Benefit extends Component {
           <div className="p-3 md:p-4 relative w-[90%] h-[60vh] my-auto py-10 mx-auto grid-pattern">
             <div className="absolute w-[50%] h-[80%] bottom-[10%] left-[2%] z-10 ">
               <img
-                src="https://peekinsights.co/wp-content/themes/starter/img/roas-chart.svg"
+                src=""
                 alt=""
               />
             </div>
@@ -189,7 +189,7 @@ export default class Benefit extends Component {
                 </clipPath>
               </defs>
               <image
-                href="https://peekinsights.co/wp-content/uploads/2024/09/ARTD-C04-Device-034-edit.jpg.webp"
+                href=""
                 loading="lazy"
                 width="200"
                 height="200"
@@ -249,7 +249,7 @@ export default class Benefit extends Component {
             <div className="absolute w-[80%] h-[80%] rounded-full">
               <img
                 className="w-full h-full rounded-full object-cover"
-                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                src=""
                 alt="Prize Structure"
               />
             </div>
