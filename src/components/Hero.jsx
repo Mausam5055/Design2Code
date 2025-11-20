@@ -89,7 +89,7 @@ const Hero = () => {
           <div className=" absolute border-1 border-black rounded-[14vh] md:rounded-[22vh] lg:rounded-[29vh] w-[28vh] md:w-[45vh] lg:w-[60%] h-full items-center">
             <img
               className="w-full h-full rounded-[14vh] md:rounded-[22vh] lg:rounded-[29vh] object-cover"
-              src="https://images.unsplash.com/photo-1617240016072-d92174e44171?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="4.webp"
               alt=""
             />
           </div>
