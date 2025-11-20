@@ -87,7 +87,7 @@ const Hero = () => {
           <div className=" absolute border-1 border-black rounded-[14vh] md:rounded-[22vh] lg:rounded-[29vh] w-[28vh] md:w-[45vh] lg:w-[60%] h-full items-center">
             <img
               className="w-full h-full rounded-[14vh] md:rounded-[22vh] lg:rounded-[29vh] object-cover"
-              src="4.webp"
+              src="1.jpeg"
               alt=""
             />
           </div>
