@@ -4,7 +4,7 @@ import star from "../assets/star.svg";
 export default class Benefit extends Component {
   render() {
     return (
-      <div className="w-full py-10 items-center grid bg-[#f7f3ef] justify-center">
+      <div id="testimonials" className="w-full py-10 items-center grid bg-[#f7f3ef] justify-center">
         <div className="bg-[#bbecff] items-center rounded-2xl flex gap-2 mx-auto py-2 px-4">
           <div className="h-4 w-4 ml-1">
             <img className="object-cover" src={star} alt="" />

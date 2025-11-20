@@ -79,7 +79,7 @@ export default class Included extends Component {
     ];
     
     return (
-      <div className="w-full py-8 grid grid-cols-1 xl:grid-cols-2 bg-white">
+      <div id="ourgoals" className="w-full py-8 grid grid-cols-1 xl:grid-cols-2 bg-white">
         <div className="flex flex-col justify-items-start">
           <div className="absolute h-6 bg-[#bbecff] w-[180px] items-center rounded-2xl flex gap-2 mx-6 py-2 px-4">
             <div className="h-4 w-4 ml-1">
