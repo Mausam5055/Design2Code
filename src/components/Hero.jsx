@@ -85,22 +85,22 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="relative w-full h-[80vh] mt-10 flex justify-center pt-4">
-          <div className=" absolute border-1 border-black rounded-[22vh] lg:rounded-[29vh] w-[45vh] lg:w-[60%] h-full items-center">
+        <div className="relative w-full h-[45vh] md:h-[80vh] mt-10 flex justify-center pt-4">
+          <div className=" absolute border-1 border-black rounded-[14vh] md:rounded-[22vh] lg:rounded-[29vh] w-[28vh] md:w-[45vh] lg:w-[60%] h-full items-center">
             <img
-              className="w-full h-full rounded-[22vh] lg:rounded-[29vh] object-cover"
+              className="w-full h-full rounded-[14vh] md:rounded-[22vh] lg:rounded-[29vh] object-cover"
               src="https://images.unsplash.com/photo-1615454782617-e69bbd4f2969?q=80&w=2028&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div className="absolute w-[18vh] h-[14vh] z-10 top-[8%] left-[70%]">
+          <div className="absolute w-[11vh] md:w-[18vh] h-[8vh] md:h-[14vh] z-10 top-[8%] left-[70%]">
             <img
               className="rounded-lg object-cover"
               src="image1.png"
               alt=""
             />
           </div>
-          <div className="absolute w-[18vh] h-[12vh] z-10 bottom-[12%] right-[62%] md:right-[68%] hidden md:block">
+          <div className="absolute w-[11vh] md:w-[18vh] h-[7vh] md:h-[12vh] z-10 bottom-[12%] right-[62%] md:right-[68%] hidden md:block">
             <img
               className="rounded-lg object-cover"
               src="image3.png"
