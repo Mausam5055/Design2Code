@@ -11,8 +11,8 @@ export default class Footer extends Component {
               Join the Design2Code Hackathon
             </h1>
             
-            <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 justify-between items-start sm:items-center">
-              {/* Links */}
+            <div className="flex flex-col items-center justify-center">
+              {/* Links - Centered */}
               <div className="flex flex-col gap-3 text-base md:text-lg text-white text-center">
                 <a href="#register" className="hover:text-red-500 transition-colors cursor-pointer">Register Now</a>
                 <a href="#details" className="hover:text-red-500 transition-colors cursor-pointer">Hackathon Details</a>
@@ -20,7 +20,7 @@ export default class Footer extends Component {
               </div>
               
               {/* Social Icons */}
-              <div className="flex gap-4 items-center">
+              <div className="flex gap-4 items-center mt-6">
                 <a 
                   href="https://www.linkedin.com/company/uxclub" 
                   target="_blank" 
@@ -86,11 +86,9 @@ export default class Footer extends Component {
 
           {/* Bottom Section with Logo */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            {/* SVG Logo */}
-            <div className="flex justify-center md:justify-start">
+            {/* SVG Logo - Centered */}
+            <div className="flex justify-center">
               <svg viewBox="0 0 600 120" className="w-full max-w-md h-auto">
-{/*              
-                <image href="UXClub.svg" x="5" y="25" width="50" height="50" clipPath="url(#circleClip)" /> */}
                 <g filter="url(#glitch)" transform="translate(60, 0)">
                   <text x="0" y="55%" fontSize="64" textAnchor="start" fill="#ffffff">Design<tspan fill="red">2</tspan>Code</text>
                 </g>
@@ -99,7 +97,6 @@ export default class Footer extends Component {
 
             {/* Copyright Info */}
             <div className="flex flex-col md:flex-row md:justify-end gap-2 md:gap-8 text-sm md:text-base text-center md:text-right">
-              
               <div className="text-white text-center">
                 Organized by UX Club
               </div>
