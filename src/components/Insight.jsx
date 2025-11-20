@@ -5,17 +5,19 @@ export default class Insight extends Component {
     return (
       <div className="w-full border-b grid grid-cols-1 lg:grid-cols-2">
         <div className="w-full bg-[#dcfebc] pt-6 md:pt-10 flex flex-col gap-4 md:gap-6">
-          <div className="h-8 px-6 md:px-12">
-            <img
-              className="h-10 w-10 md:h-12 md:w-12 object-cover"
-              src="https://peekinsights.co/wp-content/themes/starter/img/magnifying-glass.svg"
-              alt=""
-            />
+          <div className="flex items-center">
+            <div className="w-fit md:pl-6 pl-5">
+              <img
+                className="h-10 w-10 md:h-12 md:w-12 object-cover"
+                src="https://peekinsights.co/wp-content/themes/starter/img/magnifying-glass.svg"
+                alt=""
+              />
+            </div>
+            <h3 className="font-mono text-xl md:text-3xl lg:text-4xl px-6 text-left">
+              Design2Code
+            </h3>
           </div>
-          <h3 className="font-serif font-light text-xl md:text-3xl lg:text-4xl px-6 mt-6 md:mt-15 mb-2 md:mb-4 text-center">
-            Design2Code
-          </h3>
-          <p className="font-sans font-light text-lg md:text-2xl lg:text-3xl px-6 leading-relaxed text-center">
+          <p className="font-mono text-lg md:text-xl lg:text-xl px-6 leading-relaxed text-left pt-10">
             The UX Club of VIT Bhopal University is excited to propose the &quot;Design2Code&quot;. This event, spanning two days, is crafted to bridge the essential gap between design thinking and technical execution.
           </p>
           <div className="pb-8 md:pb-12"></div>

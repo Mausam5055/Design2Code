@@ -3,10 +3,10 @@ import tick from "../assets/tick.jpg";
 const Hero = () => {
   return (
     <div>
-      <div className="w-full mb-4 grid grid-cols-1 md:grid-cols-2 md:h-[80vh] place-items-center linear-grid">
-        <div className="pt-10 md:pt-24">
-          <h1 className="mt-8 px-6 text-[5vh] md:text-[8vh] md:mt-0 font-serif leading-tight text-center">
-            Make yourself usable with 48hrs hackathon
+      <div className="w-full mb-4 grid grid-cols-1 md:grid-cols-2 md:h-[80vh] place-items-center linear-grid font-mono">
+        <div className="pt-16 md:pt-20">
+          <h1 className="mt-8 px-5 md:px-6 text-[6vh] md:text-[8vh] md:mt-0 leading-[1.1] tracking-tighter md:tracking-tight text-left capitalize">
+            Great product originate from great design
             <span>
               
               <img
@@ -16,13 +16,13 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <h4 className="px-6 mt-6 text-xl leading-relaxed text-center">
-            We{`'`}re hosting a 2-day sprint to find the best front-end champs on campus. Bring up the designs (must be beautiful) and the food (it{`'`}s free). You just show up, team up, and code. This is for the coders who want to flex their CSS skills and the designers who want to see their vision built right.
+          <h4 className="px-5 md:px-6 mt-10 md:text-lg text-left tracking-tighter  ">
+            We{`'`}re hosting a 2 day&apos;s sprint to find the best front-end champs on campus. You just show up, team up, and code. This is for the coders who want to flex their CSS skills and the designers who want to see their vision built right.
           </h4>
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <button className="flex items-center w-[90%] h-14 ml-6 mt-4 md:mt-20 bg-black text-white rounded-xl justify-between border-2 border-black hover:bg-white hover:text-black">
-              <a className="px-4 text-xl" href="">
-                Know More !
+          <div className="grid grid-cols-1 md:grid-cols-2 pt-8 md:pt-0">
+            <button className="flex items-center w-[90%] h-14 ml-5 md:ml-6 mt-4 md:mt-20 rounded-xl justify-between border-2 border-black hover:bg-white hover:text-black">
+              <a className="px-4 md:text-lg capitalize" href="">
+                Submit your team!
               </a>
               <div className="h-8 w-8 mr-4">
                 <svg
@@ -47,9 +47,9 @@ const Hero = () => {
                 </svg>
               </div>
             </button>
-            <button className="flex items-center w-[90%] h-14 ml-6 mt-2 md:mt-20 bg-white text-black rounded-xl justify-between border-2 border-black hover:bg-black hover:text-white">
-              <a className="px-4 text-xl" href="">
-                Get Your Ticket!
+            <button className="flex items-center w-[90%] h-14 ml-5 md:ml-6 mt-2 md:mt-20 bg-white text-black rounded-xl justify-between border-2 border-black hover:bg-black hover:text-white">
+              <a className="px-4 md:text-lg" href="">
+                Know More
               </a>
               <div className="h-8 w-8 mr-4">
                 <svg
@@ -85,7 +85,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="relative w-full h-[45vh] md:h-[80vh] mt-10 flex justify-center pt-4">
+        <div className="relative w-full h-[45vh] md:h-[80vh] mt-10 md:flex justify-center pt-4 hidden">
           <div className=" absolute border-1 border-black rounded-[14vh] md:rounded-[22vh] lg:rounded-[29vh] w-[28vh] md:w-[45vh] lg:w-[60%] h-full items-center">
             <img
               className="w-full h-full rounded-[14vh] md:rounded-[22vh] lg:rounded-[29vh] object-cover"
@@ -119,7 +119,7 @@ const Hero = () => {
       <div className="relative w-full overflow-hidden py-1 border-t border-b bg-white flex items-center justify-center mt-12">
        
         <div className="w-full">
-          <div className="flex w-max items-center animate-marquee mx-auto">
+          <div className="flex w-max items-center animate-marquee mx-auto gap-24">
             {Array(4)
               .fill(0)
               .map((_, i) => (
@@ -129,7 +129,7 @@ const Hero = () => {
                     src="VITB-Logo.svg"
                     alt=""
                   />
-                  <svg viewBox="0 0 600 120" className="items-center px-4 h-20 md:h-24">
+                  <svg viewBox="-100 0 600 150" className="items-center px-4 h-20 md:h-24">
                     <defs>
                       <filter id="glitch">
                         <feTurbulence baseFrequency="0.8" numOctaves="1" result="t"/>
