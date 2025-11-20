@@ -223,15 +223,6 @@ export default class Included extends Component {
                       <p className="text-lg font-serif">{member.name}</p>
                     </div>
                     <p className="text-sm text-gray-600">{member.role}</p>
-                    {member.linkedinUrl && (
-                      <a 
-                        href={member.linkedinUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-blue-600 text-sm mt-1 hover:underline"
-                      >
-                      </a>
-                    )}
                   </div>
                 </div>
               ))}
