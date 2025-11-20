@@ -52,8 +52,8 @@ export default class Benefit extends Component {
                 </div>
 
                 <div className="space-y-3 font-sans text-base md:text-lg">
-                  <div className="flex items-start gap-3">
-                    <div className="h-4 w-4 md:h-5 md:w-5 mt-1 flex-shrink-0">
+                  <div className="flex items-center bg-white rounded-2xl gap-2 w-fit px-2 my-2">
+                    <div className="h-4 w-4 md:h-5 md:w-5">
                       <svg
                         viewBox="0 0 24 24"
                         fill="none"
@@ -84,7 +84,7 @@ export default class Benefit extends Component {
                         </g>
                       </svg>
                     </div>
-                    <span className="text-sm md:text-lg font-mono font-light">
+                    <span className="text-sm md:text-lg font-mono font-light py-2">
                       <span className="font-semibold">
                         Official Offline Certificates
                       </span>{" "}
@@ -92,8 +92,8 @@ export default class Benefit extends Component {
                     </span>
                   </div>
 
-                  <div className="flex items-start gap-3">
-                    <div className="h-4 w-4 md:h-5 md:w-5 mt-1 flex-shrink-0">
+                  <div className="flex items-center bg-white rounded-2xl gap-2 w-fit px-2 my-2">
+                    <div className="h-4 w-4 md:h-5 md:w-5">
                       <svg
                         viewBox="0 0 24 24"
                         fill="none"
@@ -124,7 +124,7 @@ export default class Benefit extends Component {
                         </g>
                       </svg>
                     </div>
-                    <span className="text-sm md:text-lg font-mono font-light">
+                    <span className="text-sm md:text-lg font-mono font-light py-2">
                       <span className="font-semibold">
                         Digital Participation Certificates
                       </span>{" "}
