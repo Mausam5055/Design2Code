@@ -34,10 +34,27 @@ mongoose.connect(process.env.MONGO_URI || '')
     process.exit(1);
   });
 
+// CORS Configuration - Allow production frontend
+const allowedOrigins = process.env.CLIENT_ORIGIN 
+  ? process.env.CLIENT_ORIGIN.split(',').map(origin => origin.trim())
+  : ['http://localhost:5173', 'https://uxclub.vercel.app'];
+
 app.use(
   cors({
-    origin: process.env.CLIENT_ORIGIN?.split(',') || ['http://localhost:5173'],
-    methods: ['POST', 'GET'],
+    origin: (origin, callback) => {
+      // Allow requests with no origin (like mobile apps, Postman, curl, etc.)
+      if (!origin) return callback(null, true);
+      
+      if (allowedOrigins.indexOf(origin) !== -1) {
+        callback(null, true);
+      } else {
+        // Deny the request
+        callback(null, false);
+      }
+    },
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
   }),
 );
 app.use(express.json());
