@@ -33,7 +33,7 @@ class Pack extends React.Component {
 
   nextSlide = () => {
     const committeeMembers = [
-      { id: 1, name: 'Dr. T Venkateswara Rao', role: 'Faculty Co-ordinator', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376310/D56_0101_-_Copy_sbe7g9.png', linkedinUrl: 'https://www.linkedin.com/in/dr-t-venkateswara-rao/', bgColor: 'bg-white', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-1-icon.svg' },
+      { id: 1, name: 'Dr. T Venkateswara Rao', role: 'Faculty Co-ordinator', imageUrl: '10.webp', linkedinUrl: 'https://www.linkedin.com/in/dr-t-venkateswara-rao/', bgColor: 'bg-white', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-1-icon.svg' },
       { id: 2, name: 'Tanishk Kapoor', role: 'President', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376310/D56_0101_-_Copy_sbe7g9.png', linkedinUrl: 'https://www.linkedin.com/in/tanishk-kapoor-64722828a/', bgColor: 'bg-[#f1ee83]', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-2-icon.svg' },
       { id: 3, name: 'Sujal Singh', role: 'Vice President', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763482021/Untitled_design__1_-removebg-preview_nhpkbh.png', linkedinUrl: 'https://www.linkedin.com/in/sujalsingh28/', bgColor: 'bg-[#e2c6ff]', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-2-icon.svg' },
       { id: 4, name: 'Sonakshi Saxena', role: 'General Secretary', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376454/IMG-20251117-WA0020_q9ewge.png', linkedinUrl: 'https://www.linkedin.com/in/sona14saxena', bgColor: 'bg-[#ffd4d4]', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-1-icon.svg' },
@@ -47,7 +47,7 @@ class Pack extends React.Component {
 
   prevSlide = () => {
     const committeeMembers = [
-      { id: 1, name: 'Dr. T Venkateswara Rao', role: 'Faculty Co-ordinator', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376310/D56_0101_-_Copy_sbe7g9.png', linkedinUrl: 'https://www.linkedin.com/in/dr-t-venkateswara-rao/', bgColor: 'bg-white', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-1-icon.svg' },
+      { id: 1, name: 'Dr. T Venkateswara Rao', role: 'Faculty Co-ordinator', imageUrl: '10.webp', linkedinUrl: 'https://www.linkedin.com/in/dr-t-venkateswara-rao/', bgColor: 'bg-white', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-1-icon.svg' },
       { id: 2, name: 'Tanishk Kapoor', role: 'President', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376310/D56_0101_-_Copy_sbe7g9.png', linkedinUrl: 'https://www.linkedin.com/in/tanishk-kapoor-64722828a/', bgColor: 'bg-[#f1ee83]', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-2-icon.svg' },
       { id: 3, name: 'Sujal Singh', role: 'Vice President', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763482021/Untitled_design__1_-removebg-preview_nhpkbh.png', linkedinUrl: 'https://www.linkedin.com/in/sujalsingh28/', bgColor: 'bg-[#e2c6ff]', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-2-icon.svg' },
       { id: 4, name: 'Sonakshi Saxena', role: 'General Secretary', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376454/IMG-20251117-WA0020_q9ewge.png', linkedinUrl: 'https://www.linkedin.com/in/sona14saxena', bgColor: 'bg-[#ffd4d4]', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-1-icon.svg' },
@@ -84,7 +84,7 @@ class Pack extends React.Component {
 
   render() {
     const committeeMembers = [
-      { id: 1, name: 'Dr. T Venkateswara Rao', role: 'Faculty Co-ordinator', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376310/D56_0101_-_Copy_sbe7g9.png', linkedinUrl: 'https://www.linkedin.com/in/dr-t-venkateswara-rao/', bgColor: 'bg-white', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-1-icon.svg' },
+      { id: 1, name: 'Dr. T Venkateswara Rao', role: 'Faculty Co-ordinator', imageUrl: '10.webp', linkedinUrl: 'https://www.linkedin.com/in/dr-t-venkateswara-rao/', bgColor: 'bg-white', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-1-icon.svg' },
       { id: 2, name: 'Tanishk Kapoor', role: 'President', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376310/D56_0101_-_Copy_sbe7g9.png', linkedinUrl: 'https://www.linkedin.com/in/tanishk-kapoor-64722828a/', bgColor: 'bg-[#f1ee83]', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-2-icon.svg' },
       { id: 3, name: 'Sujal Singh', role: 'Vice President', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763482021/Untitled_design__1_-removebg-preview_nhpkbh.png', linkedinUrl: 'https://www.linkedin.com/in/sujalsingh28/', bgColor: 'bg-[#e2c6ff]', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-2-icon.svg' },
       { id: 4, name: 'Sonakshi Saxena', role: 'General Secretary', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763376454/IMG-20251117-WA0020_q9ewge.png', linkedinUrl: 'https://www.linkedin.com/in/sona14saxena', bgColor: 'bg-[#ffd4d4]', iconUrl: 'https://peekinsights.co/wp-content/uploads/2024/08/package-1-icon.svg' },

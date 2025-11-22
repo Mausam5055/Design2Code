@@ -42,7 +42,7 @@ const Preloader = ({ onFinish }) => {
         className="mb-8 font-[Socilo]"
       >
         <div className="flex items-center gap-2">
-          <h1 className="text-5xl">U</h1>
+          <h1 className="text-5xl"></h1>
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: "24vh" }}
@@ -55,7 +55,7 @@ const Preloader = ({ onFinish }) => {
               className="h-full max-w-none object-cover object-left brightness-0"
             />
           </motion.div>
-          <h1 className="text-5xl">X</h1>
+          <h1 className="text-5xl"></h1>
         </div>
       </motion.h1>
       <motion.div
