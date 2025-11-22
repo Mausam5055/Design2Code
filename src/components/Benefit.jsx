@@ -46,29 +46,54 @@ export default class Benefit extends Component {
                 <p className="font-mono text-sm md:text-lg tracking-tight leading-[1.2] pt-3 font-light mb-8 text-center">
                   Exceptional prizes for outstanding teams, celebrating innovation and design excellence.
                 </p>
-                <div className="space-y-4 flex flex-col items-center">
-                  <div className="flex items-center gap-3 mb-3">
-                    <svg
-                      className="w-8 h-8 text-gray-600"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <h3 className="font-mono text-2xl md:text-3xl text-gray-900 font-semibold">
-                      Winning Team
-                    </h3>
+                <div className="flex flex-col gap-6 lg:flex-row lg:gap-10">
+                  <div className="flex flex-col items-center gap-4 flex-1">
+                    <div className="flex items-center gap-3">
+                      <svg
+                        className="w-8 h-8 text-gray-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <h3 className="font-mono text-2xl md:text-3xl text-gray-900 font-semibold">
+                        Winning Team
+                      </h3>
+                    </div>
+                    <p className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
+                      ₹4,000
+                    </p>
+                    <div className="flex items-center bg-white rounded-2xl gap-2 w-fit px-2">
+                      <span className="text-sm md:text-xl capitalize font-mono font-light py-2">
+                        Cash Gift Card
+                      </span>
+                    </div>
                   </div>
-                  <p className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
-                    ₹4,000
-                  </p>
-                  <div className="flex items-center bg-white rounded-2xl gap-2 w-fit px-2 my-2">
-                    <span className="text-sm md:text-xl capitalize font-mono font-light py-2">
-                      Cash Gift Card
-                    </span>
+
+                  <div className="flex flex-col items-center gap-4 flex-1">
+                    <div className="flex items-center gap-3">
+                      <svg
+                        className="w-8 h-8 text-gray-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <h3 className="font-mono text-2xl md:text-3xl text-gray-900 font-semibold">
+                        Best Design
+                      </h3>
+                    </div>
+                    <p className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
+                      ₹2,000
+                    </p>
+                    <div className="flex items-center bg-white rounded-2xl gap-2 w-fit px-2">
+                      <span className="text-sm md:text-xl capitalize font-mono font-light py-2">
+                        Cash Gift Card
+                      </span>
+                    </div>
                   </div>
                 </div>
-
+                
                 <div className="space-y-3 font-sans text-base md:text-lg">
                   <div className="flex items-center bg-white rounded-2xl gap-2 w-fit px-2 my-2">
                     <div className="h-4 w-4 md:h-5 md:w-5">
@@ -333,27 +358,26 @@ export default class Benefit extends Component {
           </div>
           <div className="p-3 md:p-4 relative w-[90%] h-[60vh] my-auto py-10 mx-auto grid-pattern">
             <svg
-              className="absolute top-[5%] right-[6%]"
-              width="85%"
-              height="85%"
+              width="100%"
+              height="100%"
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
             >
               <defs>
-                <clipPath id="clip0_224_605">
-                  <path d="M50 50.5H50.5V50V49.5C23.2199 49.5 1.04241 27.6526 0.509799 0.5H199.491C198.957 27.6526 176.781 49.5 149.5 49.5V50V50.5H150C177.338 50.5 199.5 72.6619 199.5 100C199.5 125.033 180.918 145.726 156.795 149.038L156.791 150.028C180.949 153.556 199.5 174.363 199.5 199.5H0.5C0.5 174.363 19.0509 153.556 43.2094 150.028L43.2051 149.038C19.0823 145.726 0.5 125.033 0.5 100C0.5 72.6619 22.6619 50.5 50 50.5Z"></path>
+                <clipPath id="prizeMask">
+                  <path d="M18.502 100.912L18.4857 99.9286C8.28339 98.2515 0.5 89.3913 0.5 78.7143V22.7143C0.5 10.8401 10.1259 1.21428 22 1.21428H78C88.4321 1.21428 97.1299 8.64466 99.0877 18.502L100.071 18.4857C101.748 8.28339 110.609 0.5 121.286 0.5L177.286 0.500002C189.16 0.500003 198.786 10.1259 198.786 22V78C198.786 88.432 191.355 97.1298 181.499 99.0876L181.515 100.071C191.716 101.748 199.5 110.609 199.5 121.286V177.286C199.5 189.16 189.874 198.786 178 198.786H122C111.568 198.786 102.87 191.355 100.912 181.498L99.9286 181.514C98.2515 191.716 89.3914 199.5 78.7143 199.5H22.7143C10.8401 199.5 1.21426 189.874 1.21426 178L1.21426 122C1.21426 111.568 8.64466 102.87 18.502 100.912Z"></path>
                 </clipPath>
               </defs>
               <image
                 href="3.jpg"
+                loading="lazy"
                 width="200"
                 height="200"
-                clipPath="url(#clip0_224_605)"
+                clipPath="url(#prizeMask)"
                 preserveAspectRatio="xMidYMid slice"
-                loading="lazy"
               ></image>
               <path
-                d="M50 50.5H50.5V50V49.5C23.2199 49.5 1.04241 27.6526 0.509799 0.5H199.491C198.957 27.6526 176.781 49.5 149.5 49.5V50V50.5H150C177.338 50.5 199.5 72.6619 199.5 100C199.5 125.033 180.918 145.726 156.795 149.038L156.791 150.028C180.949 153.556 199.5 174.363 199.5 199.5H0.5C0.5 174.363 19.0509 153.556 43.2094 150.028L43.2051 149.038C19.0823 145.726 0.5 125.033 0.5 100C0.5 72.6619 22.6619 50.5 50 50.5Z"
+                d="M18.502 100.912L18.4857 99.9286C8.28339 98.2515 0.5 89.3913 0.5 78.7143V22.7143C0.5 10.8401 10.1259 1.21428 22 1.21428H78C88.4321 1.21428 97.1299 8.64466 99.0877 18.502L100.071 18.4857C101.748 8.28339 110.609 0.5 121.286 0.5L177.286 0.500002C189.16 0.500003 198.786 10.1259 198.786 22V78C198.786 88.432 191.355 97.1298 181.499 99.0876L181.515 100.071C191.716 101.748 199.5 110.609 199.5 121.286V177.286C199.5 189.16 189.874 198.786 178 198.786H122C111.568 198.786 102.87 191.355 100.912 181.498L99.9286 181.514C98.2515 191.716 89.3914 199.5 78.7143 199.5H22.7143C10.8401 199.5 1.21426 189.874 1.21426 178L1.21426 122C1.21426 111.568 8.64466 102.87 18.502 100.912Z"
                 fill="none"
                 stroke="black"
                 vectorEffect="non-scaling-stroke"
@@ -459,7 +483,7 @@ export default class Benefit extends Component {
                     </svg>
                   </div>
                   <span className="text-sm md:text-xl font-mono font-light">
-                    Submit wireframes by 11:59 PM - 23/11/2025
+                    Submit wireframes by 11:59 PM - 27/11/2025
                   </span>
                 </div>
 
@@ -496,7 +520,7 @@ export default class Benefit extends Component {
                     </svg>
                   </div>
                   <span className="text-sm md:text-xl font-mono font-light">
-                    Judging based on User-Centricity, Innovation & Usability
+                    The problem statement will be disseminated via email at 9:00 AM on 26/11/2025.
                   </span>
                 </div>
 
@@ -533,7 +557,7 @@ export default class Benefit extends Component {
                     </svg>
                   </div>
                   <span className="text-sm md:text-xl font-mono font-light">
-                    Top 30 teams announced by 11:00 PM - 24/11/2025
+                    Top 90 teams announced by 12:00 PM - 28/11/2025 via E-Mail
                   </span>
                 </div>
               </div>
@@ -582,7 +606,7 @@ export default class Benefit extends Component {
                   <img className="object-cover h-8 w-8 md:h-14 md:w-14" src={star} alt="" />
                 </div>
                 <h2 className="font-mono font-medium text-3xl lg:text-4xl leading-none tracking-tight text-gray-900">
-                  Event Format (Day-2)
+                  Day 2: Online Judging Round (Paid)
                 </h2>
               </div>
               <div className="w-16 h-[1px] bg-[#bbecff]"></div>
@@ -595,10 +619,10 @@ export default class Benefit extends Component {
                     />
                   </div>
                   <h2 className="font-mono text-xl md:text-3xl capitalize text-center py-2 px-2 leading-tight">
-                    Offline Live Code Evaluation
+                    Evaluation + Winner Announcement
                   </h2>
                 <p className="font-mono text-sm md:text-lg tracking-tight leading-[1.2] pt-3 font-light mb-8 text-center">
-                  Shortlisted teams will demonstrate their developed models with guidance from senior club members.
+                  Paid evening round featuring live judging, continuous mentorship, and a closing ceremony announcing the winners.
                 </p>
                 <div className="flex items-center bg-white rounded-2xl gap-2 w-fit  px-2 my-2 mb-4 md:mb-6">
                   <div className="h-4 w-4 md:h-5 md:w-5">
@@ -633,7 +657,7 @@ export default class Benefit extends Component {
                     </svg>
                   </div>
                   <span className="text-sm md:text-lg capitalize font-mono font-light">
-                    1:00 PM - 1:30 PM: Mandatory check-in
+                    7:00 PM - 8:00 PM: Welcome address
                   </span>
                 </div>
                 <div className="flex items-center bg-white rounded-2xl gap-2 w-fit  px-2 my-2 mb-4 md:mb-6">
@@ -669,7 +693,7 @@ export default class Benefit extends Component {
                     </svg>
                   </div>
                   <span className="text-sm md:text-xl font-mono font-light">
-                    1:30 PM - 2:00 PM: Inaugural ceremony & briefing
+                    12:00 PM - 6:30 PM: Evaluation of developed models
                   </span>
                 </div>
 
@@ -706,7 +730,7 @@ export default class Benefit extends Component {
                     </svg>
                   </div>
                   <span className="text-sm md:text-xl font-mono font-light">
-                    2:00 PM - 3:20 PM: Model evaluation with guidance
+                    Senior Club Members provide continuous guidance
                   </span>
                 </div>
 
@@ -743,35 +767,36 @@ export default class Benefit extends Component {
                     </svg>
                   </div>
                   <span className="text-sm md:text-xl font-mono font-light">
-                    3:20 PM - 4:20 PM: Final demo, judging & prize distribution
+                    7:00 PM - 8:00 PM: Winners announcement & vote of thanks
                   </span>
                 </div>
+
+                
               </div>
             </div>
           </div>
           <div className="p-3 md:p-4 relative w-[90%] h-[60vh] my-auto py-10 mx-auto grid-pattern">
             <svg
-              className="absolute top-[5%] right-[6%]"
-              width="85%"
-              height="85%"
+              width="100%"
+              height="100%"
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
             >
               <defs>
-                <clipPath id="clip0_224_605">
-                  <path d="M50 50.5H50.5V50V49.5C23.2199 49.5 1.04241 27.6526 0.509799 0.5H199.491C198.957 27.6526 176.781 49.5 149.5 49.5V50V50.5H150C177.338 50.5 199.5 72.6619 199.5 100C199.5 125.033 180.918 145.726 156.795 149.038L156.791 150.028C180.949 153.556 199.5 174.363 199.5 199.5H0.5C0.5 174.363 19.0509 153.556 43.2094 150.028L43.2051 149.038C19.0823 145.726 0.5 125.033 0.5 100C0.5 72.6619 22.6619 50.5 50 50.5Z"></path>
+                <clipPath id="prizeMask">
+                  <path d="M18.502 100.912L18.4857 99.9286C8.28339 98.2515 0.5 89.3913 0.5 78.7143V22.7143C0.5 10.8401 10.1259 1.21428 22 1.21428H78C88.4321 1.21428 97.1299 8.64466 99.0877 18.502L100.071 18.4857C101.748 8.28339 110.609 0.5 121.286 0.5L177.286 0.500002C189.16 0.500003 198.786 10.1259 198.786 22V78C198.786 88.432 191.355 97.1298 181.499 99.0876L181.515 100.071C191.716 101.748 199.5 110.609 199.5 121.286V177.286C199.5 189.16 189.874 198.786 178 198.786H122C111.568 198.786 102.87 191.355 100.912 181.498L99.9286 181.514C98.2515 191.716 89.3914 199.5 78.7143 199.5H22.7143C10.8401 199.5 1.21426 189.874 1.21426 178L1.21426 122C1.21426 111.568 8.64466 102.87 18.502 100.912Z"></path>
                 </clipPath>
               </defs>
               <image
                 href="5.jpg"
+                loading="lazy"
                 width="200"
                 height="200"
-                clipPath="url(#clip0_224_605)"
+                clipPath="url(#prizeMask)"
                 preserveAspectRatio="xMidYMid slice"
-                loading="lazy"
               ></image>
               <path
-                d="M50 50.5H50.5V50V49.5C23.2199 49.5 1.04241 27.6526 0.509799 0.5H199.491C198.957 27.6526 176.781 49.5 149.5 49.5V50V50.5H150C177.338 50.5 199.5 72.6619 199.5 100C199.5 125.033 180.918 145.726 156.795 149.038L156.791 150.028C180.949 153.556 199.5 174.363 199.5 199.5H0.5C0.5 174.363 19.0509 153.556 43.2094 150.028L43.2051 149.038C19.0823 145.726 0.5 125.033 0.5 100C0.5 72.6619 22.6619 50.5 50 50.5Z"
+                d="M18.502 100.912L18.4857 99.9286C8.28339 98.2515 0.5 89.3913 0.5 78.7143V22.7143C0.5 10.8401 10.1259 1.21428 22 1.21428H78C88.4321 1.21428 97.1299 8.64466 99.0877 18.502L100.071 18.4857C101.748 8.28339 110.609 0.5 121.286 0.5L177.286 0.500002C189.16 0.500003 198.786 10.1259 198.786 22V78C198.786 88.432 191.355 97.1298 181.499 99.0876L181.515 100.071C191.716 101.748 199.5 110.609 199.5 121.286V177.286C199.5 189.16 189.874 198.786 178 198.786H122C111.568 198.786 102.87 191.355 100.912 181.498L99.9286 181.514C98.2515 191.716 89.3914 199.5 78.7143 199.5H22.7143C10.8401 199.5 1.21426 189.874 1.21426 178L1.21426 122C1.21426 111.568 8.64466 102.87 18.502 100.912Z"
                 fill="none"
                 stroke="black"
                 vectorEffect="non-scaling-stroke"
