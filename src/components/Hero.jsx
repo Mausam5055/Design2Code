@@ -111,21 +111,21 @@ const Hero = () => {
             <img
               className="w-full h-full rounded-[14vh] md:rounded-[22vh] lg:rounded-[29vh] object-cover"
               src="1.jpeg"
-              alt=""
+              alt="Design2Code Hackathon participants collaborating on frontend development"
             />
           </div>
           <div className="absolute w-[11vh] md:w-[18vh] h-[8vh] md:h-[14vh] z-10 top-[8%] left-[70%]">
             <img
               className="rounded-lg object-cover"
               src="image1.png"
-              alt=""
+              alt="UX design collaboration workspace"
             />
           </div>
           <div className="absolute w-[11vh] md:w-[18vh] h-[7vh] md:h-[12vh] z-10 bottom-[12%] right-[62%] md:right-[68%] hidden md:block">
             <img
               className="rounded-lg object-cover"
               src="image3.png"
-              alt=""
+              alt="Frontend development and design showcase"
             />
           </div>
           {/* <div className="absolute w-[28vh] h-[10vh] z-10 bottom-[5%] left-1/2">
@@ -148,7 +148,7 @@ const Hero = () => {
                   <img
                     className="h-14 object-contain filter invert"
                     src="VITB-Logo.svg"
-                    alt=""
+                    alt="VIT Bhopal University logo"
                   />
                   <svg viewBox="-100 0 600 150" className="items-center px-4 h-20 md:h-24">
                     <defs>
@@ -165,7 +165,7 @@ const Hero = () => {
                   <img
                     className="h-14 object-contain filter invert"
                     src="UXClub.svg"
-                    alt=""
+                    alt="UX Club VIT Bhopal logo"
                   />
                 </div>
               ))}
