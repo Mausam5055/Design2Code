@@ -167,7 +167,7 @@ export default class Benefit extends Component {
                 </clipPath>
               </defs>
               <image
-                href="demo2.jpg"
+                href="2.jpg"
                 loading="lazy"
                 width="200"
                 height="200"
@@ -345,7 +345,7 @@ export default class Benefit extends Component {
                 </clipPath>
               </defs>
               <image
-                href="2.webp"
+                href="3.jpg"
                 width="200"
                 height="200"
                 clipPath="url(#clip0_224_605)"
@@ -556,7 +556,7 @@ export default class Benefit extends Component {
                 </clipPath>
               </defs>
               <image
-                href="3.webp"
+                href="4.jpg"
                 loading="lazy"
                 width="200"
                 height="200"
@@ -763,7 +763,7 @@ export default class Benefit extends Component {
                 </clipPath>
               </defs>
               <image
-                href="7.webp"
+                href="5.jpg"
                 width="200"
                 height="200"
                 clipPath="url(#clip0_224_605)"

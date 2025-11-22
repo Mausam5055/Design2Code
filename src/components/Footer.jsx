@@ -38,7 +38,7 @@ export default class Footer extends Component {
                 </a>
                 
                 <a 
-                  href="https://instagram.com/uxclub" 
+                  href="https://www.instagram.com/uxclub.vitb/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform cursor-pointer"
