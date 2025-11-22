@@ -148,7 +148,7 @@ export default function Nav({ isOpen, toggleMenu }) {
               <div className="overflow-hidden space-y-2 pt-4 border-t border-gray-200">
                 <motion.div {...smallTextAnimation(1.7)}>
                   <a
-                    href="https://www.instagram.com"
+                    href="https://www.instagram.com/uxclub.vitb/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-1"
