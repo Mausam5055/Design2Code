@@ -19,9 +19,9 @@ export default class Benefit extends Component {
         </h1> */}
 
         {/* Prize Structure Section */}
-        <div className="bg-white w-[96%] lg:h-[100vh] border mx-auto mt-10 grid grid-cols-1 lg:grid-cols-2 shadow-sm hover:shadow-md transition-shadow">
-          <div className="flex flex-col justify-center lg:order-2 px-4 sm:px-6 lg:px-8 py-10 lg:py-0">
-            <div className="space-y-6">
+        <div className="bg-white w-[96%] border mx-auto mt-10 grid gap-8 lg:grid-cols-2 rounded-[32px] shadow-sm hover:shadow-md transition-shadow px-4 py-8 sm:p-10">
+          <div className="flex flex-col justify-center lg:order-2">
+            <div className="space-y-6 lg:pr-4">
               <div className="flex items-center gap-2">
                 <div className="">
                   <img className="object-cover h-8 w-8 md:h-14 md:w-14" src={star} alt="" />
@@ -32,7 +32,7 @@ export default class Benefit extends Component {
               </div>
               <div className="w-16 h-[1px] bg-[#bbecff]"></div>
 
-              <div className="relative bg-[#f7f3ef] w-[100%] border-black border-1 mx-auto shadow-md mb-6 px-6 md:px-26">
+              <div className="relative bg-[#f7f3ef] w-full border border-black/10 rounded-3xl mx-auto shadow-md px-6 py-10 md:px-10">
                 <div className="">
                   <img
                     className="absolute object-cover top-0 left-0 h-12 w-12 md:h-16 md:w-16 bg-[#bbecff] p-4"
@@ -40,14 +40,14 @@ export default class Benefit extends Component {
                     src="https://peekinsights.co/wp-content/uploads/2024/09/icon-magnifying-glass.svg"
                   />
                 </div>
-                <h2 className="font-mono text-xl md:text-3xl capitalize text-center py-2 mt-8">
+                <h2 className="font-mono text-xl md:text-3xl capitalize text-center py-2 mt-10">
                   Exciting Rewards
                 </h2>
                 <p className="font-mono text-sm md:text-lg tracking-tight leading-[1.2] pt-3 font-light mb-8 text-center">
                   Exceptional prizes for outstanding teams, celebrating innovation and design excellence.
                 </p>
-                <div className="flex flex-col gap-6 lg:flex-row lg:gap-10">
-                  <div className="flex flex-col items-center gap-4 flex-1">
+                <div className="grid gap-6 sm:grid-cols-2">
+                  <div className="flex flex-col items-center gap-4 bg-white/70 rounded-2xl px-4 py-6">
                     <div className="flex items-center gap-3">
                       <svg
                         className="w-8 h-8 text-gray-600"
@@ -70,7 +70,7 @@ export default class Benefit extends Component {
                     </div>
                   </div>
 
-                  <div className="flex flex-col items-center gap-4 flex-1">
+                  <div className="flex flex-col items-center gap-4 bg-white/70 rounded-2xl px-4 py-6">
                     <div className="flex items-center gap-3">
                       <svg
                         className="w-8 h-8 text-gray-600"
@@ -94,8 +94,8 @@ export default class Benefit extends Component {
                   </div>
                 </div>
                 
-                <div className="space-y-3 font-sans text-base md:text-lg">
-                  <div className="flex items-center bg-white rounded-2xl gap-2 w-fit px-2 my-2">
+                <div className="space-y-3 font-sans text-base md:text-lg mt-6">
+                  <div className="flex items-center bg-white rounded-2xl gap-2 w-full sm:w-fit px-3 py-2">
                     <div className="h-4 w-4 md:h-5 md:w-5">
                       <svg
                         viewBox="0 0 24 24"
@@ -127,15 +127,15 @@ export default class Benefit extends Component {
                         </g>
                       </svg>
                     </div>
-                    <span className="text-sm md:text-xl capitalize font-mono font-light py-2">
+                    <span className="text-sm md:text-xl capitalize font-mono font-light">
                       <span className="font-semibold">
-                        Official Offline Certificates
+                        Official Certificates + Google Codesource Goodies
                       </span>{" "}
-                      for all winning team members
+                      to the winning team
                     </span>
                   </div>
 
-                  <div className="flex items-center bg-white rounded-2xl gap-2 w-fit px-2 my-2">
+                  <div className="flex items-center bg-white rounded-2xl gap-2 w-full sm:w-fit px-3 py-2">
                     <div className="h-4 w-4 md:h-5 md:w-5">
                       <svg
                         viewBox="0 0 24 24"
@@ -167,7 +167,7 @@ export default class Benefit extends Component {
                         </g>
                       </svg>
                     </div>
-                    <span className="text-sm md:text-xl capitalize font-mono font-light py-2">
+                    <span className="text-sm md:text-xl capitalize font-mono font-light">
                       <span className="font-semibold">
                         Digital Participation Certificates
                       </span>{" "}
@@ -178,7 +178,7 @@ export default class Benefit extends Component {
               </div>
             </div>
           </div>
-          <div className="p-3 md:p-4 relative w-[90%] h-[60vh] my-auto mx-auto grid-pattern flex items-center justify-center">
+          <div className="p-3 md:p-4 relative max-w-[480px] w-full aspect-square my-auto mx-auto grid-pattern flex items-center justify-center">
            
             <svg
               width="100%"
@@ -396,7 +396,7 @@ export default class Benefit extends Component {
                   <img className="object-cover h-8 w-8 md:h-14 md:w-14" src={star} alt="" />
                 </div>
                 <h2 className="font-mono font-medium text-3xl lg:text-4xl leading-none tracking-tight text-gray-900">
-                  Event Format (Day-1)
+                  Event Format (Round-1)
                 </h2>
               </div>
               <div className="w-16 h-[1px] bg-[#bbecff]"></div>
@@ -447,7 +447,9 @@ export default class Benefit extends Component {
                     </svg>
                   </div>
                   <span className="text-sm md:text-lg capitalize font-mono font-light">
-                    Free registration
+                    <span className="font-semibold">
+                        Free registration
+                    </span>{" "}
                   </span>
                 </div>
                 <div className="flex items-center bg-white rounded-2xl gap-2 w-fit  px-2 my-2 mb-4 md:mb-6">
@@ -557,7 +559,7 @@ export default class Benefit extends Component {
                     </svg>
                   </div>
                   <span className="text-sm md:text-xl font-mono font-light">
-                    Top 90 teams announced by 12:00 PM - 28/11/2025 via E-Mail
+                    The selected teams will be announced by 6:00 PM - 28/11/2025 via E-Mail
                   </span>
                 </div>
               </div>
@@ -606,7 +608,7 @@ export default class Benefit extends Component {
                   <img className="object-cover h-8 w-8 md:h-14 md:w-14" src={star} alt="" />
                 </div>
                 <h2 className="font-mono font-medium text-3xl lg:text-4xl leading-none tracking-tight text-gray-900">
-                  Day 2: Online Judging Round (Paid)
+                  Round 2: Development And Judging Round (Paid)
                 </h2>
               </div>
               <div className="w-16 h-[1px] bg-[#bbecff]"></div>
@@ -619,10 +621,10 @@ export default class Benefit extends Component {
                     />
                   </div>
                   <h2 className="font-mono text-xl md:text-3xl capitalize text-center py-2 px-2 leading-tight">
-                    Evaluation + Winner Announcement
+                    Evaluation + Winner Announcement (30/11/2025)
                   </h2>
                 <p className="font-mono text-sm md:text-lg tracking-tight leading-[1.2] pt-3 font-light mb-8 text-center">
-                  Paid evening round featuring live judging, continuous mentorship, and a closing ceremony announcing the winners.
+                  Development Round requires qualified participants to turn the given (possibly shuffled) design into a working web application. A small fee confirms your slot, followed by live judging, mentorship, and a closing ceremony announcing the winners
                 </p>
                 <div className="flex items-center bg-white rounded-2xl gap-2 w-fit  px-2 my-2 mb-4 md:mb-6">
                   <div className="h-4 w-4 md:h-5 md:w-5">
@@ -657,9 +659,11 @@ export default class Benefit extends Component {
                     </svg>
                   </div>
                   <span className="text-sm md:text-lg capitalize font-mono font-light">
-                    7:00 PM - 8:00 PM: Welcome address
+                    Submit your deployed project URL on 30th November before 12:00PM.
                   </span>
                 </div>
+                
+              
                 <div className="flex items-center bg-white rounded-2xl gap-2 w-fit  px-2 my-2 mb-4 md:mb-6">
                   <div className="h-4 w-4 md:h-5 md:w-5">
                     <svg

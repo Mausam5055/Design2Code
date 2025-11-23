@@ -69,7 +69,7 @@ export default class Included extends Component {
 
   render() {
     const { currentIndex } = this.state;
-    
+
     // Updated committee members data
     const committeeMembers = [
       { id: 1, name: 'Dr. T Venkateswara Rao', role: 'Faculty Co-ordinator', imageUrl: '10.webp', linkedinUrl: 'https://www.linkedin.com/in/dr-t-venkateswara-rao/' },
@@ -79,7 +79,7 @@ export default class Included extends Component {
       { id: 5, name: 'Yeshu Agarwal', role: 'Tech Lead', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763375023/img_yeshu_v41boo.png', linkedinUrl: 'https://www.linkedin.com/in/yeshu-agarwal-linkdedin' },
       { id: 6, name: 'Nitin Vishwakarma', role: 'Design Lead', imageUrl: 'https://res.cloudinary.com/dy5utqlkm/image/upload/v1763377075/Untitled_design-removebg-preview_lpfvlu.png', linkedinUrl: 'https://www.linkedin.com/in/nitin-vishwakarma/' },
     ];
-    
+
     return (
       <div id="ourgoals" className="w-full py-8 grid grid-cols-1 xl:grid-cols-2 bg-white">
         <div className="flex flex-col justify-items-start">
@@ -108,17 +108,17 @@ export default class Included extends Component {
           <h1 className="font-serif font-light text-3xl md:text-5xl px-6 py-10 leading-tight">
             Evaluation Committee
           </h1>
-          
+
           {/* Mobile Carousel */}
           <div className="mt-0 xl:hidden">
             <div className="relative w-full">
-              <div 
+              <div
                 className="overflow-hidden"
                 onTouchStart={this.handleTouchStart}
                 onTouchMove={this.handleTouchMove}
                 onTouchEnd={this.handleTouchEnd}
               >
-                <div 
+                <div
                   className="flex transition-transform duration-300 ease-in-out"
                   style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                 >
@@ -127,9 +127,9 @@ export default class Included extends Component {
                       <div className="flex flex-col items-center">
                         <div className="w-64 h-80 bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
                           {member.imageUrl ? (
-                            <img 
-                              src={member.imageUrl} 
-                              alt={member.name} 
+                            <img
+                              src={member.imageUrl}
+                              alt={member.name}
                               className="w-full h-full object-cover"
                               onError={(e) => {
                                 e.target.onerror = null;
@@ -144,14 +144,14 @@ export default class Included extends Component {
                           <div className="flex items-center">
                             {/* Replaced profile icon with LinkedIn icon and made it clickable */}
                             {member.linkedinUrl ? (
-                              <a 
-                                href={member.linkedinUrl} 
-                                target="_blank" 
+                              <a
+                                href={member.linkedinUrl}
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-5 h-5 mr-2 text-blue-600 hover:text-blue-800"
                               >
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                                 </svg>
                               </a>
                             ) : (
@@ -168,7 +168,7 @@ export default class Included extends Component {
                   ))}
                 </div>
               </div>
-              
+
               {/* Navigation Dots */}
               <div className="flex justify-center mt-4 space-x-2">
                 {committeeMembers.map((_, index) => (
@@ -192,7 +192,7 @@ export default class Included extends Component {
               />
             </div>
           </div>
-          
+
           {/* Desktop Grid Layout */}
           <div className="mt-0 hidden xl:block">
             <div className="grid grid-cols-2 gap-8">
@@ -200,9 +200,9 @@ export default class Included extends Component {
                 <div key={index} className="flex flex-col items-center">
                   <div className="w-64 h-80 md:w-64 md:h-80 bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
                     {member.imageUrl ? (
-                      <img 
-                        src={member.imageUrl} 
-                        alt={member.name} 
+                      <img
+                        src={member.imageUrl}
+                        alt={member.name}
                         className="w-full h-full object-cover"
                         onError={(e) => {
                           e.target.onerror = null;
@@ -217,14 +217,14 @@ export default class Included extends Component {
                     <div className="flex items-center">
                       {/* Replaced profile icon with LinkedIn icon and made it clickable */}
                       {member.linkedinUrl ? (
-                        <a 
-                          href={member.linkedinUrl} 
-                          target="_blank" 
+                        <a
+                          href={member.linkedinUrl}
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="w-5 h-5 mr-2 text-blue-600 hover:text-blue-800"
                         >
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                           </svg>
                         </a>
                       ) : (
@@ -338,7 +338,7 @@ export default class Included extends Component {
                 Wireless Mics (3),  Wired Mics (2)
               </span>
             </div>
-           
+
             <div className="flex items-center bg-white rounded-2xl gap-2 w-fit  px-2 my-2 mb-4 md:mb-6">
               <div className="h-4 w-4 md:h-5 md:w-5">
                 <svg
@@ -375,7 +375,7 @@ export default class Included extends Component {
                 Tripods for Mics (2),Sound System
               </span>
             </div>
-           
+
           </div>
           <div className="relative bg-[#f7f3ef] w-[90%] border-black border-1 mx-auto shadow-md mb-6 px-6 md:px-26">
             <img
@@ -497,7 +497,7 @@ export default class Included extends Component {
                 3 Long Tables , Guest Chairs and Tables(6)
               </span>
             </div>
-          
+
             <div className="flex items-center bg-white rounded-2xl gap-2 w-fit  px-2 my-2 mb-4 md:mb-6">
               <div className="h-4 w-4 md:h-5 md:w-5">
                 <svg
@@ -534,8 +534,8 @@ export default class Included extends Component {
                 Podium,3 Camphor,Lamp (Candle Lighting)
               </span>
             </div>
-            
-            
+
+
             <div className="flex items-center bg-white rounded-2xl gap-2 w-fit  px-2 my-2 mb-4 md:mb-6">
               <div className="h-4 w-4 md:h-5 md:w-5">
                 <svg
@@ -572,7 +572,7 @@ export default class Included extends Component {
                 Match Box, Water dispensers (3)
               </span>
             </div>
-            
+
           </div>
           <div className="relative bg-[#f7f3ef] w-[90%] border-black border-1 mx-auto shadow-md mb-6 px-6 md:px-26">
             <img

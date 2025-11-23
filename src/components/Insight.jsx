@@ -34,7 +34,7 @@ export default class Insight extends Component {
                 <div className="mt-3 md:mt-4">
                   <p className="font-sans font-medium text-base md:text-lg text-left"><strong>Proposed Dates & Format:</strong></p>
                   <ul className="list-disc pl-6 font-sans font-light text-base md:text-lg mt-2 space-y-1 md:space-y-2">
-                    <li className="text-left">Day 1 (Online - Wireframe Submission): 27/11/2025</li>
+                    <li className="text-left">Day 1 (Online - Wireframe Submission): 26/11/2025</li>
                     <li className="text-left">Day 2 (Online – Evaluation + Prize Distribution): 27/11/2025</li>
                   </ul>
                 </div>

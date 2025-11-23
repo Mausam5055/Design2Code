@@ -167,6 +167,11 @@ const Hero = () => {
                     src="UXClub.svg"
                     alt="UX Club VIT Bhopal logo"
                   />
+                  <img
+                    className="h-14 object-contain ml-28 pr-4"
+                    src="SDC%20Logo.png"
+                    alt="SDC logo"
+                  />
                 </div>
               ))}
           </div>
