@@ -129,7 +129,7 @@ export default class Benefit extends Component {
                     </div>
                     <span className="text-sm md:text-xl capitalize font-mono font-light">
                       <span className="font-semibold">
-                        Official Certificates + Google Codesource Goodies
+                        Official Certificates + Google Codesource Goodies + Unstop Goodies
                       </span>{" "}
                       to the winning team
                     </span>

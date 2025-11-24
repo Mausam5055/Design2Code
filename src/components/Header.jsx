@@ -6,10 +6,22 @@ const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [bgColor, setBgColor] = useState("bg-white");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      setBgColor("bg-[#dcfebc]");
+    } else {
+      const timer = setTimeout(() => {
+        setBgColor("bg-white");
+      }, 1000); // 1s delay to match exit animation
+      return () => clearTimeout(timer);
+    }
+  }, [isMenuOpen]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +48,7 @@ const Header = () => {
       if (isMenuOpen) {
         setIsMenuOpen(false);
       }
-      
+
       // Scroll to the section
       section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -45,9 +57,8 @@ const Header = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full bg-white hover:bg-[#dcfebc] z-50 transition-all duration-300 ${
-          showHeader ? "translate-y-0" : "-translate-y-full"
-        }`}
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${bgColor} ${showHeader ? "translate-y-0" : "-translate-y-full"
+          }`}
       >
         <div className="w-full h-18 lg:h-20 border-b flex justify-between items-center">
           <Link to="/">
@@ -108,7 +119,7 @@ const Header = () => {
                 Evaluation Committee
               </span>
             </a>
-            <a 
+            <a
               href="https://unstop.com/p/design2code-vellore-institute-of-technology-bhopal-1599336"
               target="_blank"
               rel="noopener noreferrer"
@@ -118,7 +129,7 @@ const Header = () => {
                 Register Now!
               </span>
             </a>
-            <div 
+            <div
               className="h-10 w-10 cursor-pointer lg:hidden text-black lg:text-black"
               onClick={toggleMenu}
             >

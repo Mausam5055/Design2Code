@@ -139,19 +139,19 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative w-full overflow-hidden py-1 border-t border-b bg-white flex items-center justify-center mt-12">
-  
+
         <div className="w-full">
-          <div className="flex w-max items-center animate-marquee mx-auto gap-24">
+          <div className="flex w-max items-center animate-marquee mx-auto gap-16 md:gap-24">
             {Array(4)
               .fill(0)
               .map((_, i) => (
-                <div key={i} className="flex items-center">
+                <div key={i} className="flex items-center gap-16 md:gap-24">
                   <img
                     className="h-14 object-contain filter invert"
                     src="VITB-Logo.svg"
                     alt="VIT Bhopal University logo"
                   />
-                  <svg viewBox="-100 0 600 150" className="items-center px-4 h-20 md:h-24">
+                  <svg viewBox="0 0 400 150" className="items-center h-20 md:h-24">
                     <defs>
                       <filter id="glitch">
                         <feTurbulence baseFrequency="0.8" numOctaves="1" result="t" />
@@ -169,8 +169,13 @@ const Hero = () => {
                     alt="UX Club VIT Bhopal logo"
                   />
                   <img
-                    className="h-14 object-contain ml-28 pr-4"
+                    className="h-14 object-contain"
                     src="SDC%20Logo.png"
+                    alt="SDC logo"
+                  />
+                  <img
+                    className="h-14 md:h-16 object-contain"
+                    src="image4.png"
                     alt="SDC logo"
                   />
                 </div>
