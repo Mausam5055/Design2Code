@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import tick from "../assets/tick.jpg";
 
 const Hero = () => {
@@ -18,11 +17,13 @@ const Hero = () => {
             </span>
           </h1>
           <h4 className="px-5 md:px-6 mt-10 md:text-lg text-left tracking-tighter  ">
-            We{`'`}re hosting a 2 day&apos;s sprint to find the best front-end champs on campus. You just show up, team up, and code. This is for the coders who want to flex their CSS skills and the designers who want to see their vision built right.
+            We&apos;re hosting a 2 day&apos;s sprint to find the best front-end champs on campus. You just show up, team up, and code. This is for the coders who want to flex their CSS skills and the designers who want to see their vision built right.
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 pt-8 md:pt-0">
-            <Link
-              to="/register"
+            <a
+              href="https://unstop.com/p/design2code-vellore-institute-of-technology-bhopal-1599336"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center w-[90%] h-14 ml-5 md:ml-6 mt-4 md:mt-20 rounded-xl justify-between border-2 border-black hover:bg-white hover:text-black transition"
             >
               <span className="px-4 md:text-lg capitalize">Submit your team!</span>
@@ -44,7 +45,7 @@ const Hero = () => {
                   </g>
                 </svg>
               </div>
-            </Link>
+            </a>
             <button
               className="flex items-center w-[90%] h-14 ml-5 md:ml-6 mt-2 md:mt-20 bg-white text-black rounded-xl justify-between border-2 border-black hover:bg-black hover:text-white"
               onClick={() => {
@@ -138,7 +139,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative w-full overflow-hidden py-1 border-t border-b bg-white flex items-center justify-center mt-12">
-
+  
         <div className="w-full">
           <div className="flex w-max items-center animate-marquee mx-auto gap-24">
             {Array(4)
@@ -181,4 +182,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero
